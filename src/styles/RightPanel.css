@@ -1,0 +1,14 @@
+.right-panel {
+    width: 100px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+  
+  .right-panel h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
+  }

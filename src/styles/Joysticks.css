@@ -1,0 +1,61 @@
+.joysticks-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100px; /* Adjust based on your layout */
+}
+
+.joystick {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color: #3d3d3d;
+  border-radius: 50%;
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.left-joystick {
+  border: 2px solid #3b82f6;
+  margin-left: 15%; /* Pushed to far left */
+}
+
+.right-joystick {
+  border: 2px solid #ef4444;
+  margin-right: 15%; /* Pushed to far right */
+}
+
+
+.joystick-handle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #2563eb;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.05s;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
+.right-joystick .joystick-handle {
+  background-color: #dc2626;
+}
+
+.joystick-label {
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}

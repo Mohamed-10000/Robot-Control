@@ -1,0 +1,84 @@
+.top-hud {
+  background-color: #2d2d2d;
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.hud-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hud-left h1 {
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.hud-metrics {
+  display: flex;
+  gap: 8px;
+}
+
+.hud-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.battery-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.battery-level {
+  width: 20px;
+  height: 10px;
+  border: 1px solid #9ca3af;
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.battery-level::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #10b981;
+  width: 100%;
+}
+
+.battery-level::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  top: 2px;
+  width: 2px;
+  height: 6px;
+  background-color: #9ca3af;
+  border-radius: 0 1px 1px 0;
+}
+
+.time {
+  position: relative;
+  color: #9ca3af;
+  padding-right: 15px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -2px;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #ef4444;
+  border-radius: 50%;
+}

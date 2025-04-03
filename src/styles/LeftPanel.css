@@ -1,0 +1,30 @@
+.left-panel {
+    width: 100px;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+    flex-shrink: 0;
+  }
+  
+  .left-panel h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: white;
+  }
+
+  .panel-button {
+    padding: 10px 20px;
+    background-color: #3d3d3d;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-family: 'Courier New', monospace;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 50px;
+  }
+  
+  .panel-button:hover {
+    background-color: #4d4d4d;
+  }
